@@ -1,0 +1,191 @@
+/**
+ * WooCommerce Checkout Optimization by Cartimize
+ * Copyright (c) 2019 Revmakx LLC
+ * revmakx.com
+ */
+
+.cartimize_short_tip { margin-left: 6px; }
+.cartimize_short_tip a { text-decoration: underline; }
+
+.cartimize_checkopt_settings_page { max-width: 800px; }
+
+.cartimize_checkopt_settings_page ul {
+	margin-top: 0;
+	margin-left: 22px;
+}
+
+.cartimize_checkopt_settings_page ul li {
+	margin-bottom: 0;
+}
+
+.cartimize_checkopt_settings_page .cartimize_pro_preview_highlight {
+	border: 1px dashed #003e99;
+	padding: 10px;
+	position: relative;
+	margin-left: -10px;
+	background-color: rgb(0, 62, 153,0.07);
+}
+
+.cartimize_checkopt_settings_page .cartimize_pro_preview_highlight::after {
+	content: 'PRO';
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: #003e99;
+	color: #fff;
+	padding: 1px 5px;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.cartimize_checkopt_settings_page .cartimize_pro_preview_toggle {
+	display: none;
+}
+
+.cartimize_checkopt_settings_page .buy_pro_right_side_cont{
+	background-color: #fff;
+	z-index: 1;
+	border: 2px solid rgb(20, 0, 92);
+	margin: 5px;
+	padding: 10px;
+	width: 152px;
+}
+
+.cartimize_checkopt_settings_page .buy_pro_right_side_cont.fixed{
+	position: fixed;
+	top: 30px;
+}
+
+.cartimize_checkopt_settings_page .buy_pro_right_side_cont .go_pro_btn_link{
+	display: block;
+	background-color: #003e99;
+	color: #fff;
+	border: 0;
+	padding: 7px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.cartimize_checkopt_settings_page .buy_pro_right_side_cont .go_pro_btn_link::after{
+	content: "\f504";
+	font-family: dashicons;
+	font-size: 14px;
+	margin-left: 5px;
+	position: absolute;
+}
+
+.cartimize_checkopt_settings_page fieldset p.description { margin-top: 0; margin-left: 22px; font-size: 13px; }
+
+.cartimize_checkopt_settings_page fieldset.input_text { margin-left: 22px; }
+
+.cartimize_checkopt_settings_page label[for='cartimize_setting_checkopt_set_shipping_address_as_billing_address_default'] { margin-left: 22px !important; }
+
+.cartimize_checkopt_settings_page .disabled_text{ opacity: 0.5; cursor: default; }
+
+.cartimize_admin .acc-login-form {
+	background-color: #fff;
+	padding: 10px 20px 25px;
+	width: 320px;
+	margin-top: 25px;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+.cartimize_admin .acc-login-form fieldset {
+	padding: 5px 0;
+}
+.cartimize_admin .acc-login-form fieldset label {
+	display: block;
+	font-size: 14px;
+}
+.cartimize_admin .acc-login-form fieldset input[type=text], .cartimize_admin .acc-login-form fieldset input[type=password] {
+	width: 100%;
+	padding: 7px;
+}
+.cartimize_admin .acc-login-form fieldset a {    float: right;
+	font-size: 12px;
+	padding-top: 5px; }
+.cartimize_admin .acc-login-form #cartimize_service_login_btn {
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+@-webkit-keyframes cartimize_admin_btn_loading {
+	from {
+		background-position: 0 0
+	}
+	to {
+		background-position: 1rem 0
+	}
+}
+
+@keyframes cartimize_admin_btn_loading {
+	from {
+		background-position: 0 0
+	}
+	to {
+		background-position: 1rem 0
+	}
+}
+
+.cartimize_admin .button-primary.loading {
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+	background-size: 1rem 1rem;
+	-webkit-animation: cartimize_admin_btn_loading 0.7s linear infinite;
+	animation: cartimize_admin_btn_loading 0.7s linear infinite;
+	cursor: default;
+}
+.cartimize_admin a.button.loading {
+	background-image: linear-gradient(-45deg, rgba(0, 0, 0, .05) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%, transparent 75%, transparent);
+	background-size: 1rem 1rem;
+	-webkit-animation: cartimize_admin_btn_loading 0.7s linear infinite;
+	animation: cartimize_admin_btn_loading 0.7s linear infinite;
+	color: rgba(0, 0, 0, .4);
+	cursor: default;
+}
+
+.cartimize_admin .info-box {
+	color: #31708f;
+	background-color: #d9edf7;
+	border: 1px solid #bce8f1;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.cartimize_admin .error-box {
+	background-color: #f2dede;
+	border: 1px solid #ebcccc;
+	color: #a94442;
+	padding: 4px 7px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.cartimize_admin .success-box {
+	background-color: #dff0d8;
+	border: 1px solid #d0e9c6;
+	color: #3c763d;
+	padding: 4px 7px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.cartimize_admin_notice .success-box{
+	padding: 9px;
+	color: #27ae60;
+}
+
+.cartimize_admin_notice .error-box{
+	color: #a94442;
+}
+
+.cartimize_admin_notice input[type=button]:disabled{
+	color: rgba(255, 255, 255, 0.6) !important;
+}

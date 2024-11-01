@@ -1,0 +1,195 @@
+/**
+ * WooCommerce Checkout Optimization by Cartimize
+ * Copyright (c) 2019 Revmakx LLC
+ * revmakx.com
+ */
+
+.cartimize_checkopt_first_name_cont { width:100% !important; }
+
+.cartimize_checkopt_company_name_hide, .cartimize_checkopt_address_2_hide, .cartimize_checkopt_order_comments_hide, .cartimize_get_city_state_from_postcode_hide{
+	position: absolute !important;
+	left: -99999px;
+}
+
+
+a.cartimize_show_delayed_account_register_form, a.cartimize_jump_to_field { cursor: pointer; }
+
+.cartimize_form_row_first{
+	width: 45%;
+	float: left;
+	margin-right: 9%;
+}
+.cartimize_form_row_last{
+	width: 45%;
+	float: right;
+	margin-right: 0;
+}
+
+.cartimize_checkopt_city_state_initial_text {
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1.4em;
+	position: absolute;
+	padding-left: 10px;
+	width: 100%;
+	left: 100%;
+	top: 28px;
+}
+
+form.checkout [placeholder]:focus::placeholder {/* currently as soon as plugin activate this one will become active */
+	-webkit-transition: none;
+	transition: none;
+	opacity: 1;
+}
+.cartimize_checkopt_hide_placeholder::placeholder {
+	opacity: 0;
+}
+.cartimize_checkopt_hide_placeholder:focus::placeholder {
+	opacity: 0 !important;
+}
+
+#cartimize_bill_to_different_address_cont { margin: 0 0 1.41575em; }
+#cartimize_bill_to_different_address_cont label { display:inline; }
+
+.cartimize_order_comments_show_cont {margin-bottom:10px;}
+
+#cartimize_company_name_show_cont_shipping_company, #cartimize_company_name_show_cont_billing_company, #cartimize_address_2_show_cont_shipping_address_2, #cartimize_address_2_show_cont_billing_address_2{
+	text-align:right;
+	position: relative;
+	top: -17px;
+	margin-bottom: -17px;
+}
+
+.cartimize_inline_validation .woocommerce-checkout p.woocommerce-invalid span.cartimize_form_field_error {
+	color: #e2401c;
+	display: inline-block !important;
+	font-size: 14px;
+}
+
+.cartimize_inline_validation .form-row.woocommerce-invalid input.input-text {
+	box-shadow: inset 0px 0px 0px 1px #e2401c;
+}
+.cartimize_inline_validation .form-row.woocommerce-validated input.input-text {
+	box-shadow: 0 0;
+}
+
+.cartimize_inline_validation #shipping_country_field.form-row.woocommerce-invalid .cartimize_form_field_error, .cartimize_inline_validation #billing_country_field.form-row.woocommerce-invalid .cartimize_form_field_error,
+.cartimize_inline_validation .form-row.validate-state.woocommerce-invalid .cartimize_form_field_error {
+	bottom: -24px;
+}
+
+.cartimize_inline_validation #shipping_country_field.form-row.woocommerce-invalid .select2-selection.select2-selection--single,
+.cartimize_inline_validation #billing_country_field.form-row.woocommerce-invalid .select2-selection.select2-selection--single,
+.cartimize_inline_validation .form-row.validate-state.woocommerce-invalid .select2-selection.select2-selection--single {
+	border: 1px solid #e2401c;
+}
+
+.cartimize_inline_validation .form-row.validate-phone .cartimize_show_on_focus {
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1.4em;
+	padding-left: 10px;
+}
+a.cartimize_expand_link {
+	color: #6d6d6d;
+	font-size: 14px;
+	padding-left: 12px;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none !important;
+}
+a.cartimize_expand_link::before {
+	content: '+';
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+a.cartimize_expand_link:hover{
+	text-decoration: underline !important;
+}
+
+.cartimize_inline_validation .form-row.validate-phone .cartimize_show_on_focus {
+	font-size: 13px;
+	line-height: 1.4em;
+	padding: 3px 7px;
+	background-color: rgba(0,0,0,0.7);
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 3px;
+	margin-left: 5px;
+}
+
+.cartimize_inline_validation .form-row.woocommerce-invalid input.input-text.cartimize_input_text_highlight:focus {
+	animation: cartimize_input_text_highlight 1s ease-in;
+}
+
+.cartimize_contact_info_cont { clear:both; }/* floating fix - city & state when using get city and state from postcode, if that setting not used it will not affect anything */
+
+.woocommerce-shipping-fields__field-wrapper::after, .woocommerce-billing-fields__field-wrapper::after { /* floating fix - city & state when using get city and state from postcode, if that setting not used it will not affect anything */
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@keyframes cartimize_input_text_highlight {
+	0% {
+		box-shadow: 0 0;
+	}
+	20% {
+		box-shadow: inset 0 100px rgb(247, 241, 190);
+	}
+	100% {
+		box-shadow: inset 0 100px rgb(247, 241, 190,0);
+	}
+}
+
+.cartimize_phone_descr_cont{
+	font-size: 13px;
+	font-style: italic;
+}
+
+.checkout_coupon.woocommerce-form-coupon .blockUI.blockOverlay{
+	opacity: 1 !important;
+}
+
+
+
+.woocommerce-checkout label abbr[title] {/* global when plugin activates */
+	text-decoration: none;
+}
+
+.cartimize_loading::before {
+	content: '';
+	position: absolute;
+	bottom: 14px;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #aaa;
+	border-top-color: transparent;
+	border-radius: 50%;
+	-webkit-animation: fa-spin 0.75s linear infinite;
+	animation: fa-spin 0.75s linear infinite;
+}
+
+.cartimize_delayed_account_register_form{
+	max-width: 500px;
+	margin: auto;
+}
+
+/* following for checkout city field autocomplete based on postcode STARTS here */
+.cartimize_jqui .ui-widget-content .ui-state-active{
+	background: #ddd;
+	border: 1px solid #ddd;
+	color: unset;
+}
+
+.cartimize_jqui .ui-widget{
+	font-family: inherit;
+}
+
+.cartimize_jqui .ui-autocomplete {
+	overflow: hidden auto;
+	max-height: 144px;
+}
+/* following for checkout city field autocomplete based on postcode ENDS here */
